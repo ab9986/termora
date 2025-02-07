@@ -47,7 +47,7 @@ class AppUpdateAction : AnAction(
     }
 
     private suspend fun checkUpdate() {
-
+        return
         val latestVersion = updaterManager.fetchLatestVersion()
         if (latestVersion.isSelf) {
             return
